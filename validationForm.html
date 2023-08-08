@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS FILE/validationForm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>login page </title>
+
+</head>
+
+<body>
+    <form  id="form" class="input-group" onsubmit="validateInputs()" >
+        <h1>R E G I S T E R </h1>
+
+        <div class="input-data">
+            <label for="firstName">First name</label><br>
+            <input type="text" placeholder="first name" id="firstName">
+            <div  class="error"></div>
+        </div>
+        <div class="input-data">
+            <label for="lastName">Last name</label><br>
+            <input type="text" placeholder="Last name" id="lastName">
+            <div  class="error"></div>
+        </div>
+
+        <div class="input-Data">
+            <label for="Email">Email </label><br>
+            <input type="text" placeholder="...@gmail.com" id="Email">
+            <div  class="error"></div>
+        </div>
+        <div class="input-Data">
+            <label for="password">password</label><br>
+            <input type="password" id="password">
+            <span id="iconss" class="myIcon" onclick="myNewfun()">
+                <i class="fa-solid fa-eye" id="showeye">
+                </i><i class="fa-solid fa-eye-slash" id="hideeye"></i>
+            </span>
+            <div  class="error"></div>
+        </div>
+        <div class="input-Data">
+
+            <label for="cpassword">conform password </label><br>
+            <input type="password" id="cpassword">
+            <span id="iconss1" class="myIcon" onclick="myNewfun1()">
+                <i class="fa-solid fa-eye" id="showeyee"></i>
+                <i class="fa-solid fa-eye-slash" id="hideeyee"></i>
+            </span>
+            <div  class="error"></div>
+        </div>
+        <button type="submit"   >S I G N &nbsp;I N</button>
+    </form>
+   
+</body>
+<script src="./JAVASCRIPTFILE/validationForm.js"></script>
+</html>
